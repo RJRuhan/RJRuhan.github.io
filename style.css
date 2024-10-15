@@ -1,0 +1,360 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.right-section {
+    position: sticky;
+    top: 0;
+    /* Sticks to the top when scrolling */
+    height: 100vh;
+    /* Make sure the height is the full viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    /* Optional: background color */
+    padding: 20px;
+    /* Optional: padding */
+    box-shadow: 8px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.right-section img {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+.right-section-info {
+    align-self: flex-start;
+    /* Aligns contents to the left */
+    /* width: 100%; */
+    /* Ensure it spans the entire column */
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
+    /* Align text to the left */
+}
+
+.right-section-info p {
+    margin-bottom: 0;
+}
+
+
+
+/* Social Media Icons with Background */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    /* background-color: #f1f1f1; */
+    /* Light gray background */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 5px 10px;
+    margin-top: 30px;
+}
+
+.social-media-icons a {
+    color: black;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    color: #0056b3;
+}
+
+/* Email Icon and Address Styling */
+.email-link {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.email-item {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.email-item i {
+    margin-right: 10px;
+    /* Space between icon and email address */
+    font-size: 20px;
+    /* Icon size */
+}
+
+.email-item:hover {
+    color: #112D4E;
+    border-bottom: 1px solid #112D4E;
+    /* Change color on hover */
+}
+
+
+.cv-item {
+    text-decoration: none;
+    color: #112D4E;
+    /* background-color: whitesmoke; */
+    /* Light gray background */
+    padding: 11px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    /* Light border */
+    transition: background-color 0.3s ease;
+}
+
+.cv-item:hover {
+    background-color: #112D4E;
+    color: white;
+    /* Slightly darker on hover */
+}
+
+.cv-item i {
+    margin-right: 10px;
+    /* Adjust the gap between icon and text */
+    font-size: 20px;
+    /* Icon size */
+}
+
+
+.navbar {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+/* Centering the navbar items with equal spacing */
+.nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Adjust the gap as needed */
+    width: 100%;
+}
+
+.nav-link {
+    color: black;
+}
+
+/* Highlighting the active nav item */
+.nav-link.active {
+    font-weight: bold;
+    color: #112D4E !important;
+    border-bottom: 2px solid #007bff;
+    /* Add a bottom border to indicate active section */
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #112D4E;
+    text-decoration: none;
+    border-bottom: 2px solid #0056b3;
+}
+
+
+/* Content Section Styling */
+.content-section {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    /* Light background */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    /* max-width: 800px; */
+    /* margin: 20px auto; */
+    /* Center the div */
+    color: black;
+}
+
+
+.content-section h2 {
+    font-size: 30px;
+    color: #112D4E;
+    /* Accent color */
+    margin-bottom: 40px;
+    border-bottom: 2px solid #0056b3;
+}
+
+.content-section h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #112D4E;
+    /* Slightly darker for subheadings */
+}
+
+.content-section p,
+.content-section li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#about-section::content {
+    padding-left: 20px;
+}
+
+
+
+
+/* Individual Education Item */
+.education-item {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #A6E3E9;
+}
+
+/* Flex layout to align the dates to the right */
+.education-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-details p {
+    margin: 0;
+}
+
+.education-details h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.education-item h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.education-details .date {
+    font-size: 18px;
+    color: #112D4E;
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #007bff;
+}
+
+/* Courses List */
+/* .education-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.education-item ul li {
+    margin-bottom: 5px;
+} */
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: #A6E3E9;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline>li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.timeline>li:before {
+    content: ' ';
+    background: #285e9b;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    /* Reduced border thickness */
+    left: 24px;
+    /* Adjust the position for the smaller dot */
+    width: 12px;
+    /* Smaller width */
+    height: 12px;
+    /* Smaller height */
+    z-index: 400;
+}
+
+
+.project-item {
+    margin-bottom: 30px;
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border-bottom: .5px solid #0056b3;
+    padding: 5px;
+}
+
+
+.project-item:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+.project-item-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s;
+    border-radius: 5px;
+
+}
+
+.project-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    /* Apply border-radius to the wrapper */
+
+}
+
+.project-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.1);
+    /* Zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a shadow */
+}
+
+.view-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #007bff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-item:hover .view-icon {
+    opacity: 1;
+    /* Make icon visible on hover */
+}
